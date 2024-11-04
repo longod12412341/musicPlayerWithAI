@@ -1,0 +1,110 @@
+.music-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8; /* Light background for better contrast */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for player */
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.controls svg {
+    cursor: pointer;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.controls svg:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 5px;
+    background-color: #007bff;
+    transition: width 0.1s;
+}
+
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none; /* Remove default styles */
+    appearance: none;
+    background: transparent; /* Make background transparent */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #007bff;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px;
+    background: #e0e0e0; /* Background for the track */
+    border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-track {
+    height: 5px;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+input[type="range"]::-ms-track {
+    height: 5px;
+    background: #e0e0e0;
+    border-radius: 5px;
+}
+
+input[type="range"]:focus {
+    outline: none; /* Remove outline */
+}
+
+span {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.loop-active {
+    color: black; /* Highlight active loop button */
+}
+
