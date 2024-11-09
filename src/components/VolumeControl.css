@@ -1,0 +1,29 @@
+/* VolumeControl.css */
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.volume-control label {
+  margin-right: 8px;
+}
+
+.volume-control input[type="range"] {
+  width: 100px;
+  cursor: pointer;
+  appearance: none;
+  height: 4px;
+  background: #1db954;
+  border-radius: 5px;
+}
+
+.volume-control input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border-radius: 50%;
+}

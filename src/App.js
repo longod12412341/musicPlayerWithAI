@@ -1,6 +1,5 @@
-// src/App.js
 import React from 'react';
-import MusicPlayer from './MusicPlayer';
+import MusicPlayer from './components/MusicPlayer';
 
 const App = () => {
     return (
